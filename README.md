@@ -1,7 +1,7 @@
 # Convert your ChatGPT conversations to Markdown
 
 ## Overview
-This project consists of a Python script, `convert.py`, which is designed to process conversation data from ChatGPT and convert it into Markdown format. The script takes a JSON file containing conversation data and outputs a series of Markdown files, each representing a conversation thread.
+This project consists of a Python script, `convert.py`, which is designed to process conversation data from ChatGPT and convert it into PDF files format. The script takes a JSON file containing conversation data and outputs a series of Markdown files, each representing a conversation thread.
 
 You can export your data by following this documenation below
 
@@ -14,21 +14,22 @@ You can export your data by following this documenation below
 ### Prerequisites
 - Python 3.x
 - Access to the command line or terminal
+- markdown-pdf
 
 ### Installation
-No additional libraries are required for this script, as it only uses modules from the Python Standard Library.
+- Install markdown-pdf via pip install markdown-pdf
 
 ### Usage
 1. **Prepare Your Data:** Ensure your conversation data is in a JSON format compatible with the script.
 2. **Run the Script:** Use the command line to navigate to the directory containing `convert.py` and run the following command:
 
    ```bash
-   python convert.py [input_file] [output_dir] [--use-date-folders]
+   python convert.py [input_file] [output_dir]
    ```
 
    - Replace `[input_file]` with the path to your JSON file containing the conversation data.
    - Replace `[output_dir]` with the path to the directory where you want the Markdown files to be saved.
-   - Include --use-date-folders if you want to store the Markdown files in folders named by the date of the conversation in ISO format.
+ 
    Examples:
 
    ```bash
